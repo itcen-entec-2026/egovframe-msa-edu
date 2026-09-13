@@ -26,7 +26,7 @@ services:
     networks:
       - egov-network
   logstash:
-    container_name: logstash
+    container_name: opensearch-logstash
     image: opensearchproject/logstash-oss-with-opensearch-output-plugin:8.9.0
     restart: always
     ports:
