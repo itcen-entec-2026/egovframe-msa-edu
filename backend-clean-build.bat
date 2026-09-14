@@ -8,6 +8,8 @@ call backend/discovery/gradlew -p backend/discovery clean build
 
 call backend/apigateway/gradlew -p backend/apigateway clean build
 
+call backend/egovframe-cloud-module-common/gradlew -p backend/egovframe-cloud-module-common clean build publishToMavenLocal -x javadoc
+
 call backend/user-service/gradlew -p backend/user-service clean build
 
 call backend/portal-service/gradlew -p backend/portal-service clean build
